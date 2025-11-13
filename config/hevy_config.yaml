@@ -1,0 +1,46 @@
+api:
+  base_url: https://api.hevyapp.com/v1
+  create:
+    method: POST
+    path: /exercise_templates
+  auth:
+    type: header
+    header_name: api-key
+    header_value: ""
+  custom_headers:
+    Accept: application/json
+    Content-Type: application/json
+  rate_limit_per_minute: 60
+  timeout_seconds: 20
+  idempotency:
+    header_name: null
+
+excel:
+  sheet_name: Sheet1
+  header_row: 1
+
+mapping:
+  Title: exercise.title
+  Type: exercise.exercise_type
+  Equipment: exercise.equipment_category
+  Primary Muscle: exercise.muscle_group
+  Other Muscles: exercise.other_muscles
+
+required_fields:
+  - Title
+  - Type
+  - Equipment
+  - Primary Muscle
+
+transforms:
+  Title:
+    strip: true
+  Type:
+    strip: true
+  Equipment:
+    strip: true
+  Primary Muscle:
+    strip: true
+  Other Muscles:
+    split_csv: true
+    strip: true

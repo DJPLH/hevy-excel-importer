@@ -1,0 +1,7 @@
+requests
+pandas
+openpyxl
+pyyaml
+tqdm
+tenacity
+python-dotenv
