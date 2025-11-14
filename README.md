@@ -22,7 +22,7 @@ Users must set their own HEVY_API_KEY.
 ## 🚀 Quick Start
 
 ```bash
-git clone <your repo>
+git clone https://github.com/DJPLH/hevy-excel-importer.git
 cd hevy-excel-importer
 python3 -m venv .venv
 source .venv/bin/activate
