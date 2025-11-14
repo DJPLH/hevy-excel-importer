@@ -30,9 +30,17 @@ pip install -r requirements.txt
 ```
 
 ## 🔑 Set API Key
+You first need to generate an API key from the Hevy developer site in order to leverage their public API to create custom exercises in your Hevy account. Here -> https://hevy.com/settings?developer= 
+Once you have your API key, run this command on your computer via a terminal window.
 
+macOS / Linux
 ```bash
-export HEVY_API_KEY="your-key"
+export HEVY_API_KEY="your-hevy-api-key-here"
+```
+
+Windows PowerShell
+```bash
+$env:HEVY_API_KEY="your-hevy-api-key-here"
 ```
 
 ## ▶️ Dry Run (Safe testing. No API calls involved)
