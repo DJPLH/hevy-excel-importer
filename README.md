@@ -46,13 +46,13 @@ $env:HEVY_API_KEY="your-hevy-api-key-here"
 ## ▶️ Dry Run (Safe testing. No API calls involved)
 
 ```bash
-python -m app.main --excel data/Speediance_library.xlsx --config config/hevy_config.yaml
+python -m app.main --excel data/import.xlsx --config config/hevy_config.yaml
 ```
 
 ## ▶️ Run Importer
 
 ```bash
-python -m app.main --excel data/Speediance_library.xlsx --config config/hevy_config.yaml
+python -m app.main --excel data/import.xlsx --config config/hevy_config.yaml
 ```
 
 ## 🛡 Safety & Error Handling
